@@ -41,11 +41,8 @@ header {
   background-color: #BF8563;
   background-image: url("../images/elizaveta-strelkova-gUPznplBsLI-unsplash.jpg");
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 100vh;
   min-height: 800px;
 }
 
@@ -74,13 +71,16 @@ a:active {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  margin-left: 114px;
+  width: 89%;
+  margin-left: auto;
   padding-top: 46px;
-  margin-right: 114px;
+  margin-right: auto;
 }
 
 .menu {
-  width: 40%;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
@@ -94,9 +94,10 @@ h1 {
 }
 
 .introducing_chings, .coming_soon {
+  font-feature-settings: "calt", "ss01" off;
   display: block;
   color: #ffffff;
-  font-size: 62pt;
+  font-size: 62px;
   text-transform: uppercase;
 }
 
@@ -104,33 +105,52 @@ h1 {
   font-weight: 100;
 }
 
+h2 .welcome {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  font-weight: lighter;
+  width: 27%;
+  padding-top: 160px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* main {
+  width: 92%;
+} */
+
 .about {
   margin-top: 183px;
   display: flex;
   flex-wrap: wrap;
-  width: 1096px;
+  width: 76%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 152px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .about_text_block {
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  width: 416px;
+  width: 40%;
   justify-content: flex-start;
-  margin-right: 18%;
 }
 
 .description_about {
+  padding-top: 59px;
   display: block;
   position: relative;
-  width: 416px;
 }
 
-.model_photo {
+.model_photo img {
     width: 420px;
 }
 
@@ -138,6 +158,8 @@ h1 {
   color: #ffffff;
   font-size: 42pt;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -157,6 +179,10 @@ h1 {
 .items_list .item:nth-child(-n+3) {
   width: 33%;
   margin: auto;
+}
+
+.items_list .item:nth-child(-n+3) img{
+  width: 420px;
 }
 
 .item {
@@ -204,7 +230,7 @@ h1 {
 }
 
 .items_list .item:nth-child(n+5) {
-  width: 45%;
+  width: 47%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 6px;
@@ -247,6 +273,7 @@ h1 {
   width: 84%;
   margin: auto;
   margin-top: 84px;
+  margin-bottom: 150px;
   justify-content: space-around;
   align-items: center;
 }
@@ -286,9 +313,13 @@ h2, h3 {
 }
 
 .form {
-  width: 29%;
+  width: 45%;
   margin: auto;
   margin-top: 155px;
+}
+
+.form h2 {
+  width: 100%;
 }
 
 .form p {
